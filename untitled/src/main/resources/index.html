@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Painting</title>
+</head>
+<body>
+<h1>Painting</h1>
+<canvas id="Canvas" class="canvas" width="800" height="800"></canvas>
+<div class="controls">
+    <div class="controls__range">
+        <label for="LineWidth">Line Width: </label>
+        <input type="range" id="LineWidth" min="1" max="30" value="5"/>
+    </div>
+    <div class="controls__btns">
+        <button id="fill">Fill</button>
+        <button id="transparent">transparent</button>
+        <div class="controls__colors" id="Colors">
+            <label for="StrokeColor">Stroke Color: </label>
+            <input type="color" id="StrokeColor">
+            <label for="FillColor">Fill Color: </label>
+            <input type="color" id="FillColor">
+        </div>
+        <div class="controls__shapes">
+            <button id="Circle">Circle</button>
+            <button id="Rectangle">Rectangle</button>
+            <button id="Line">Line</button>
+            <button id="Text">Text</button>
+        </div>
+        <div class="controls__text">
+            <label for="TextInput">Text: </label>
+            <input type="text" id="TextInput">
+        </div>
+    </div>
+</div>
+<script src="whiteboard.js"></script>
+</body>
+</html>
